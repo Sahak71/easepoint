@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EasePoint — multi-point easing for After Effects</title>
+<meta name="description" content="EasePoint is an After Effects panel that applies bounce, elastic and wind-up curves as real keyframes, next to 80 editable bezier presets. 7-day free trial.">
+<meta property="og:title" content="EasePoint — multi-point easing for After Effects">
+<meta property="og:description" content="Bounce, elastic and wind-up curves applied as real keyframes. 80 editable presets. 7-day free trial.">
+<meta property="og:image" content="media/bounce.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 26 C 12 26, 13 6, 20 6 S 24 16, 28 6" /><circle cx="20" cy="6" r="2.6"/></svg>EasePoint</a>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn small" data-link="buy" href="#pricing">Buy · $12</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="heroText">
+      <p class="eyebrow">After Effects panel · CEP · AE 2022+</p>
+      <h1>Bounce, elastic and wind-up.<br><span>As real keyframes.</span></h1>
+      <p class="lead">EasePoint applies multi-point curves by adding the in-between keyframes for you, each with the exact speed and influence. No expressions. The Graph Editor shows exactly what you drew.</p>
+      <div class="ctas">
+        <a class="btn" data-link="buy" href="#pricing">Buy EasePoint · $12</a>
+        <a class="btn ghost" data-link="trial" href="#pricing">Try free for 7 days</a>
+      </div>
+      <p class="note">Full version during the trial · one license, two computers</p>
+    </div>
+    <figure class="heroCurve" aria-hidden="true">
+      <svg viewBox="0 0 400 260">
+        <g class="gridlines">
+          <path d="M0 52H400M0 104H400M0 156H400M0 208H400M80 0V260M160 0V260M240 0V260M320 0V260"/>
+        </g>
+        <path id="bcurve" class="curveLine" d="M20 230 C 60 230, 110 40, 150 40 C 170 70, 195 70, 215 40 C 228 52, 240 52, 252 40 C 258 45, 266 45, 272 40 L 380 40"/>
+        <g class="keys">
+          <rect x="144" y="34" width="12" height="12" rx="2"/>
+          <rect x="209" y="34" width="12" height="12" rx="2"/>
+          <rect x="246" y="34" width="12" height="12" rx="2"/>
+          <rect x="266" y="34" width="12" height="12" rx="2"/>
+        </g>
+        <circle class="ball" r="9">
+          <animateMotion dur="3.2s" begin="1.9s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;0.7;1" calcMode="spline" keySplines="0.4 0 0.2 1;0 0 1 1" fill="freeze"><mpath href="#bcurve"/></animateMotion>
+        </circle>
+      </svg>
+      <figcaption>bounceOut · 2 keyframes in, 6 added</figcaption>
+    </figure>
+  </section>
+
+  <section class="video">
+    <video controls preload="metadata" poster="media/poster.jpg" playsinline>
+      <source src="media/demo.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <section id="features" class="features">
+    <h2>What it does</h2>
+    <div class="grid">
+      <article><h3>Multi-point curves</h3><p>Bounce, elastic, wind-up, overshoot and stepped curves become ordinary keyframes with exact speed and influence. Nothing to render-check.</p></article>
+      <article><h3>Straight Position paths</h3><p>When a curve overshoots or bounces, a keyframe lands on every turning point, so the layer travels back along a straight line instead of curling.</p></article>
+      <article><h3>80 editable presets</h3><p>Standard easing, AE Easy Ease at 33/50/75/90%, web and Material curves, broadcast curves for lower thirds, bounce and spring curves.</p></article>
+      <article><h3>Curve editor</h3><p>Drag handles, double-click to add points, mirror Out to In, or paste cubic-bezier values from CSS.</p></article>
+      <article><h3>Keyframe type bar</h3><p>Linear, Easy Ease, Hold or Auto Bezier — set separately on the incoming and outgoing side.</p></article>
+      <article><h3>Read keys</h3><p>Pull the curve from existing keyframes back into the editor, including multi-point runs, and save it as your own preset.</p></article>
+    </div>
+    <figure class="shot"><img src="media/bounce.jpg" alt="EasePoint panel docked in After Effects with a bounceOut curve applied; the Graph Editor shows the added keyframes" loading="lazy" width="1917" height="1020"></figure>
+  </section>
+
+  <section class="steps">
+    <ol>
+      <li><b>Select</b> two keyframes on any property.</li>
+      <li><b>Pick</b> a curve — or draw your own.</li>
+      <li><b>Apply.</b> One undo step, even with added keyframes.</li>
+    </ol>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2>Pricing</h2>
+    <div class="cards">
+      <article class="card main">
+        <h3>EasePoint</h3>
+        <p class="price">$12 <small>one-time</small></p>
+        <ul>
+          <li>All features and 80 presets</li>
+          <li>7-day full trial before you buy</li>
+          <li>One license, two computers</li>
+          <li>Free updates for 0.x versions</li>
+        </ul>
+        <a class="btn" data-link="buy" href="#">Buy EasePoint</a>
+        <a class="sub" data-link="trial" href="#">Download the trial</a>
+      </article>
+      <article class="card">
+        <h3>CurveShelf Lite</h3>
+        <p class="price">Free</p>
+        <ul>
+          <li>53 bezier presets</li>
+          <li>Curve editor, favorites, your own presets</li>
+          <li>ScriptUI panel, no installer</li>
+          <li>Presets carry over to EasePoint</li>
+        </ul>
+        <a class="btn ghost" data-link="lite" href="#">Get it free</a>
+      </article>
+    </div>
+    <p class="tax">Payments are handled by our merchant of record; VAT or sales tax is added at checkout where it applies.</p>
+  </section>
+
+  <section id="faq" class="faq">
+    <h2>FAQ</h2>
+    <details><summary>Which After Effects versions are supported?</summary><p>After Effects 2022 and newer. EasePoint is tested on Windows. macOS has not been tested yet — please use the trial on a Mac before buying.</p></details>
+    <details><summary>How do I install it?</summary><p>Download the free <a href="https://aescripts.com/learn/zxp-installer/" rel="noopener">ZXP Installer</a>, drag <code>EasePoint.zxp</code> onto it, restart After Effects and open Window › Extensions › EasePoint.</p></details>
+    <details><summary>How does the trial work?</summary><p>The full version runs for 7 days. After that, Apply, Read keys and keyframe types ask for a license key; your presets stay where they are.</p></details>
+    <details><summary>Do I need to be online?</summary><p>Only to activate. After that EasePoint works offline and re-checks the key about once a week.</p></details>
+    <details><summary>Can I move my license to another computer?</summary><p>Yes. Tools › License… › Deactivate frees the seat, then activate on the new computer. One key works on two computers at a time.</p></details>
+    <details><summary>Does it use expressions?</summary><p>No. Everything is applied as standard keyframes with temporal ease, so projects render anywhere without EasePoint installed.</p></details>
+  </section>
+</main>
+
+<footer>
+  <p>EasePoint is made by Sahak Mirzoyan, a broadcast graphics designer in Yerevan, Armenia.</p>
+  <p><a href="mailto:sahakmirzoyan@gmail.com">sahakmirzoyan@gmail.com</a> · <a href="terms.html">Terms</a> · <a href="terms.html#refunds">Refund policy</a> · <a href="terms.html#privacy">Privacy</a></p>
+  <p class="fine">After Effects is a trademark of Adobe. EasePoint is not affiliated with Adobe.</p>
+</footer>
+
+<script>
+  // Store links: fill these in once the Lemon Squeezy products exist.
+  var LINKS = {
+    buy: "https://easepoint.lemonsqueezy.com/",
+    trial: "https://easepoint.lemonsqueezy.com/",
+    lite: "https://easepoint.lemonsqueezy.com/"
+  };
+  document.querySelectorAll("[data-link]").forEach(function (a) {
+    var u = LINKS[a.getAttribute("data-link")];
+    if (u && a.closest(".card, .top")) a.href = u;
+  });
+</script>
+</body>
+</html>
