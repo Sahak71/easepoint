@@ -131,15 +131,16 @@
 </footer>
 
 <script>
-  // Store links: fill these in once the Lemon Squeezy products exist.
+  // Live Lemon Squeezy checkout links. The trial is the same ZXP, hosted next to this page.
   var LINKS = {
-    buy: "https://easepoint.lemonsqueezy.com/",
-    trial: "https://easepoint.lemonsqueezy.com/",
-    lite: "https://easepoint.lemonsqueezy.com/"
+    buy: "https://easepoint.lemonsqueezy.com/checkout/buy/3d47a754-b23d-47c4-8f2d-aa24d64af79c",
+    trial: "EasePoint.zxp",
+    lite: "https://easepoint.lemonsqueezy.com/checkout/buy/dcd1c859-ccb3-4424-9917-a105b2e8424e"
   };
   document.querySelectorAll("[data-link]").forEach(function (a) {
     var u = LINKS[a.getAttribute("data-link")];
-    if (u && a.closest(".card, .top")) a.href = u;
+    if (u) a.href = u;
+    if (a.getAttribute("data-link") === "trial") a.setAttribute("download", "");
   });
 </script>
 </body>
